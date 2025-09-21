@@ -1,73 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mohamed elsayed - Personal Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Portfolio - Index</title>
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
-    header, nav, section, article, footer { padding: 1rem; max-width: 900px; margin: auto; }
-    header { background: #f5f5f5; text-align: center; }
-    nav ul { list-style: none; display: flex; justify-content: center; gap: 1rem; padding: 0; }
-    nav a { text-decoration: none; color: #333; }
-    nav a:hover { text-decoration: underline; }
-    section { margin: 2rem 0; }
-    .project { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; }
-    footer { background: #f5f5f5; text-align: center; }
+    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; padding: 1.5rem; max-width: 900px; margin: auto; }
+    header, main, footer { margin-bottom: 1.25rem; }
+    img { max-width: 100%; height: auto; display: block; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #333; padding: 0.5rem; text-align: left; }
+    th { background-color: #f2f2f2; }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Mohamed elsayed</h1>
-    <p>Web Developer | Building projects with passion and precision</p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main>
+    <article>
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is the main landing page for my first portfolio project. It demonstrates semantic HTML and basic content.</p>
 
-  <section id="introduction">
-    <h2>Introduction</h2>
-    <p>Hello! My name is Mohamed elsayed. I am an aspiring web developer passionate about creating user-friendly and accessible websites. I enjoy learning new technologies and building projects that solve real-world problems.</p>
-  </section>
+      <h2>About this Project</h2>
+      <p>I created this simple portfolio to practice HTML structure and Git workflow.</p>
+      <p>It includes headings, paragraphs, and a clickable image linking to an external site.</p>
+      <p>The content here is intentionally short and clear so it's easy to extend later.</p>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <article class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal website to showcase my projects, skills, and contact information.</p>
-      <a href="https://github.com/yourusername/My_First_Portfolio" target="_blank">View on GitHub</a>
+      <h3>Features</h3>
+      <p>Feature 1: Semantic HTML elements such as &lt;header&gt;, &lt;section&gt; and &lt;footer&gt;.</p>
+      <p>Feature 2: A responsive image wrapped in a clickable link.</p>
+
+      <h2>Clickable Image</h2>
+      <a href="https://alx.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo">
+      </a>
+      <p>Click the image to visit the ALX website (opens in a new tab).</p>
+
+      <!-- Learners Table -->
+      <h2>Learners Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Emily</td>
+            <td>28</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>Michael</td>
+            <td>32</td>
+            <td>Australia</td>
+          </tr>
+          <tr>
+            <td>Sophia</td>
+            <td>21</td>
+            <td>UK</td>
+          </tr>
+        </tbody>
+      </table>
     </article>
-    <article class="project">
-      <h3>Todo List App</h3>
-      <p>A simple web application to manage daily tasks using HTML, CSS, and JavaScript.</p>
-      <a href="https://example.com/todo" target="_blank">View Project</a>
-    </article>
-  </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I have a strong interest in web development, especially in creating responsive and accessible user interfaces.</p>
-    <p>My skills include: HTML, CSS, JavaScript, Git/GitHub, and problem solving.</p>
-    <p>Outside of coding, I enjoy reading, playing football, and exploring new technologies.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>You can reach me via email or connect with me on professional platforms:</p>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p><a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a> | <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
-  </section>
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
 
   <footer>
-    <p>&copy; 2024 Mohamed elsayed</p>
+    <p>Made by Mohamed elsayed - <a href="https://example.com" target="_blank">here</a></p>
   </footer>
-
 </body>
 </html>
